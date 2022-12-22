@@ -31,3 +31,45 @@ h6 {
     width: 70%;
     margin: 0 auto;
 }
+
+header {
+    .container {
+        height: 100px;
+        @include centralFlex("vertical");
+        @include centralFlex("space-between");
+
+        .logo {
+            img {
+                width: 60px;
+            }
+        }
+
+        nav {
+            height: 100%;
+            @include centralFlex;
+
+            ul {
+                @include centralFlex("horizzontal");
+
+                li {
+                    list-style: none;
+                    padding-left: 20px;
+
+                    a {
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                        color: #464646;
+                        text-transform: uppercase;
+                        text-decoration: none;
+
+                        &.active,
+                        &:hover {
+                            color: $primary-color;
+                            border-bottom: 4px solid $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
