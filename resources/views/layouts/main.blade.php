@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+    @include('partials.header')
     {{-- qui vengono iniettati tutti i contenuti delle pagine, quindi importo tutto quello che c'e' nelle pagine dove ho scritto content ci scrivo  --}}
     @yield('content')
 </body>
