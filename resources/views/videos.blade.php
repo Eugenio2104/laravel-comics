@@ -5,3 +5,7 @@
         videos
     </main>
 @endsection
+
+@section('title')
+    Videos
+@endsection

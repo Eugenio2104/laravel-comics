@@ -5,3 +5,7 @@
         collectibles
     </main>
 @endsection
+
+@section('title')
+    Collectibles
+@endsection

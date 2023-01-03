@@ -5,3 +5,8 @@
         movies
     </main>
 @endsection
+
+
+@section('title')
+    Movies
+@endsection

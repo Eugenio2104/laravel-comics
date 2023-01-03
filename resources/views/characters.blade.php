@@ -5,3 +5,7 @@
         characters
     </main>
 @endsection
+
+@section('title')
+    Characters
+@endsection

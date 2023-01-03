@@ -5,3 +5,8 @@
         fans
     </main>
 @endsection
+
+
+@section('title')
+    Fans
+@endsection

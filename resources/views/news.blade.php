@@ -5,3 +5,7 @@
         news
     </main>
 @endsection
+
+@section('title')
+    News
+@endsection

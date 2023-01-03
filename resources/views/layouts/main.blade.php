@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Styles -->
     @vite('resources/js/app.js')
-    <title>Laravel Comics</title>
+    <title>Laravel Comics | @yield('title')</title>
 </head>
 
 <body>
@@ -15,6 +15,8 @@
     @include('partials.header')
     {{-- qui vengono iniettati tutti i contenuti delle pagine, quindi importo tutto quello che c'e' nelle pagine dove ho scritto content ci scrivo  --}}
     @yield('content')
+
+    @include('partials.footer')
 </body>
 
 </html>

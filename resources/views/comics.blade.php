@@ -5,3 +5,8 @@
         comics
     </main>
 @endsection
+
+
+@section('title')
+    Comics
+@endsection

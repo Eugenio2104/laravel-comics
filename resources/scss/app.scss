@@ -73,3 +73,47 @@ header {
         }
     }
 }
+
+
+footer {
+    padding: 20px;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../../resources/img/footer-bg.jpg");
+
+    .container {
+        height: 350px;
+        background-image: url("../../resources/img/dc-logo-bg.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        @include centralFlex("vertical");
+        align-items: flex-start;
+
+        h3 {
+            color: white;
+            margin-left: 20px;
+        }
+
+        ul {
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            li {
+                list-style: none;
+                margin-left: 20px;
+
+                a {
+                    font-size: 0.8rem;
+                    text-decoration: none;
+                    color: gray;
+                }
+            }
+        }
+
+        .img-footer {
+            width: 450px;
+            align-items: flex-end;
+            position: relative;
+        }
+    }
+}

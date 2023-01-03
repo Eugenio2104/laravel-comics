@@ -5,3 +5,7 @@
         shop
     </main>
 @endsection
+
+@section('title')
+    Shop
+@endsection

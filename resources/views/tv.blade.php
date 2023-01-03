@@ -5,3 +5,8 @@
         tv
     </main>
 @endsection
+
+
+@section('title')
+    Tv
+@endsection
