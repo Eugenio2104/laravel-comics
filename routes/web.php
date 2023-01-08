@@ -18,7 +18,8 @@ Route::get('/', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $comics = config('db_comics.comics');
+    return view('comics', compact('comics'));
 })->name('comics');
 
 Route::get('/movies', function () {
@@ -52,3 +53,10 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
+
+Route::get('/detail_comic/{id}', function ($id) {
+    $comics = config('db_comics.comics');
+    $comic_choice = array_filter($comics, fn ($item) => $item['id'] == $id);
+    $comic = $comic_choice[array_key_first($comic_choice)];
+    return view('comic_detail', compact('comic'));
+})->name('comic_detail');

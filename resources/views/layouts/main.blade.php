@@ -17,6 +17,7 @@
     @yield('content')
 
     @include('partials.footer')
+    @include('partials.under_footer')
 </body>
 
 </html>
